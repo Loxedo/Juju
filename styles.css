@@ -38,10 +38,10 @@ p {
   animation: fadeIn 2.5s ease-in-out;
 }
 
-/* Corazón decorativo más pequeño */
+/* Corazón decorativo aún más pequeño */
 .heart {
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
   background-color: #ff6b6b;
   position: relative;
   margin: 0 auto;
@@ -52,21 +52,21 @@ p {
 .heart::before,
 .heart::after {
   content: "";
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
   background-color: #ff6b6b;
   position: absolute;
   border-radius: 50%;
 }
 
 .heart::before {
-  top: -35px;
+  top: -25px;
   left: 0;
 }
 
 .heart::after {
   top: 0;
-  left: 35px;
+  left: 25px;
 }
 
 /* Animaciones */
