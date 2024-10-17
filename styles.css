@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #ffe3e3; /* Fondo rojo pastel */
-  font-family: 'Arial', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,6 +25,7 @@ h1 {
   color: #ff6b6b; /* Rojo pastel más fuerte */
   font-size: 2.5rem;
   margin-bottom: 10px;
+  font-weight: 700;
   animation: fadeIn 2s ease-in-out;
 }
 
@@ -33,6 +34,7 @@ p {
   font-size: 1.2rem;
   line-height: 1.6;
   margin-bottom: 20px;
+  font-weight: 400;
   animation: fadeIn 2.5s ease-in-out;
 }
 
