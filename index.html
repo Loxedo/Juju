@@ -4,14 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Para Julia ❤️</title>
-  <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="container">
     <h1>Para Julia</h1>
-    <p>Te quiero mucho❤️</p>
+    <p>Te quiero mucho ❤️</p>
     <div class="heart"></div>
+    
+    <button id="surpriseBtn">💌 Click para una sorpresa</button>
+    <p id="hiddenMessage" class="hidden">Siempre serás mi persona favorita. 🌹</p>
+    
+    <button id="musicControlBtn">🎵 Reproducir Música</button>
+    
+    <!-- Agrega el audio para efectos -->
+    <audio id="clickSound" src="clicksound.mp3" preload="auto"></audio>
+    <audio id="music" src="music.mp3" preload="auto"></audio>
   </div>
+  
+  <script src="script.js"></script>
 </body>
 </html>
