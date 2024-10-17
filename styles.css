@@ -2,7 +2,9 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #ffe3e3; /* Fondo rojo pastel */
+  background: linear-gradient(270deg, #ffe3e3, #ff6b6b);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
   font-family: 'Montserrat', sans-serif;
   display: flex;
   justify-content: center;
@@ -25,7 +27,6 @@ h1 {
   color: #ff6b6b;
   font-size: 2.5rem;
   margin-bottom: 10px;
-  font-weight: 700;
   animation: fadeIn 2s ease-in-out;
 }
 
@@ -34,17 +35,34 @@ p {
   font-size: 1.2rem;
   line-height: 1.6;
   margin-bottom: 20px;
-  font-weight: 400;
   animation: fadeIn 2.5s ease-in-out;
 }
 
-/* Corazón decorativo aún más pequeño */
+/* Botones */
+button {
+  background-color: #ff6b6b;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 90px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin: 10px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #ff4b4b;
+  transform: scale(1.05);
+}
+
+/* Corazón decorativo */
 .heart {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   background-color: #ff6b6b;
   position: relative;
-  margin: 0 auto;
+  margin: 20px auto;
   transform: rotate(-45deg);
   animation: bounce 1.5s infinite;
 }
@@ -52,24 +70,50 @@ p {
 .heart::before,
 .heart::after {
   content: "";
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   background-color: #ff6b6b;
   position: absolute;
   border-radius: 50%;
 }
 
 .heart::before {
-  top: -25px;
+  top: -20px;
   left: 0;
 }
 
 .heart::after {
   top: 0;
-  left: 25px;
+  left: 20px;
+}
+
+/* Mensaje oculto */
+.hidden {
+  display: none;
+  color: #ff6b6b;
+  margin-top: 15px;
+  font-weight: 700;
+}
+
+/* Sección de Recuerdos y Citas */
+.recuerdos, .citas {
+  margin: 20px 0;
+  padding: 15px;
+  background-color: #ffe3e3;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+h2 {
+  color: #ff6b6b;
 }
 
 /* Animaciones */
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
 @keyframes bounce {
   0%, 100% {
     transform: translateY(0) rotate(-45deg);
