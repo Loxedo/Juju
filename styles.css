@@ -22,7 +22,7 @@ body {
 
 /* Título y párrafo */
 h1 {
-  color: #ff6b6b; /* Rojo pastel más fuerte */
+  color: #ff6b6b;
   font-size: 2.5rem;
   margin-bottom: 10px;
   font-weight: 700;
@@ -38,10 +38,10 @@ p {
   animation: fadeIn 2.5s ease-in-out;
 }
 
-/* Corazón decorativo */
+/* Corazón decorativo más pequeño */
 .heart {
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
   background-color: #ff6b6b;
   position: relative;
   margin: 0 auto;
@@ -52,21 +52,21 @@ p {
 .heart::before,
 .heart::after {
   content: "";
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
   background-color: #ff6b6b;
   position: absolute;
   border-radius: 50%;
 }
 
 .heart::before {
-  top: -50px;
+  top: -35px;
   left: 0;
 }
 
 .heart::after {
   top: 0;
-  left: 50px;
+  left: 35px;
 }
 
 /* Animaciones */
